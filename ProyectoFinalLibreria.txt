@@ -301,4 +301,29 @@ namespace Libreria
 	}
 }
 
+//Conectar
+
+
+using MySql.Data.MySqlClient;
+using System;
+
+namespace Libreria
+          {
+	
+	
+	public class Conectar
+	       {
+	 	public static MySqlConnection ObtenerConexion()
+		{
+			MySqlConnection conecta= new MySqlConnection ("server = 127.0.0.1; database= libreria; Uid = root; Pwd =antony3453;");
+			conecta.Open();
+			return conecta;
+		        }
+		
+		
+		
+		
+		
+	    }
+}
 
